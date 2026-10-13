@@ -1,3 +1,15 @@
-# BigData-Spark-Kafka
-Proyecto académico de Big Data utilizando Hadoop, Apache Spark, Apache Kafka y Spark Streaming para el procesamiento de datos en batch y en tiempo real.
-Para el desarrollo de esta actividad se seleccionó el problema del análisis de valores de temperatura en tiempo real. El objetivo fue simular la generación continua de datos provenientes de sensores y procesarlos utilizando tecnologías Big Data. Para ello se implementó un productor en Apache Kafka que generó valores de temperatura entre 20°C y 40°C y los envió al tópico sensor_data. Posteriormente, Apache Spark Streaming consumió estos datos en tiempo real para su análisis y visualización. Esta problemática permitió aplicar conceptos de captura, transmisión, procesamiento y análisis de datos en tiempo real mediante Hadoop, Apache Kafka y Apache Spark Streaming.
+Descripción de la solución
+
+La solución desarrollada permite simular y analizar compras en tiempo real utilizando Apache Kafka y Apache Spark Structured Streaming.
+
+El funcionamiento es el siguiente:
+
+Un productor Kafka genera registros de compras de manera continua.
+Los registros son enviados al tópico compras_online.
+Spark Streaming consume los datos desde Kafka.
+Los datos se agrupan por producto.
+Se calculan estadísticas en tiempo real:
+Total de compras por producto.
+Ventas acumuladas.
+Promedio de venta.
+Los resultados se visualizan continuamente en la consola.
